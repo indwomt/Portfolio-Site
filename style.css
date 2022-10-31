@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background-color: aqua;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+}
+
+.navbarlinks {
+display: flex;
+}
+.nameplate {
+    margin: 10px;
+}
+
+
+.navbarlinks li {
+    margin-left: 20px;
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+}
+
+.container ul {
+    justify-content: flex-end;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+
