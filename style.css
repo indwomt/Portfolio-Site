@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin-top: 10px;
     border-radius: 15px;
+    
 
 
 }
@@ -11,7 +12,11 @@
 body {
     margin: 20px;
     margin-top: 20px;
+    background-color: rgb(184, 175, 151);
+    box-shadow: 20px;
 }
+
+
 
 
 
@@ -25,11 +30,15 @@ nav {
     background-color: antiquewhite;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+    padding: 10px;
 
 }
 
 li {
     list-style: none;
+    display: flex;
+    margin-bottom: 40px;
     
 
 }
@@ -41,6 +50,12 @@ li {
  .navLinks ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+ }
+
+ .namePlate {
+   padding: 20px;
+   margin-bottom: 20px;
  }
 
  /* ----------------Header Syling----------------- */
@@ -50,14 +65,31 @@ li {
     justify-content: space-between;
     background-color: bisque;
     height: 550px;align-items: center;
+    flex-wrap: wrap;
  }
 
  .headerText {
-    margin: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 70px;
  }
 
- .headerImage {
-    margin: 300px;
+ 
+
+ .headerImage{
+    height:300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+ }
+ img{
+   height: 400px;
+   width: 300px;
+    align-items: center;
+    margin-right: 200px;
+    justify-content: center;
  }
 
  /*-------------------- aboutMe Styling *------------*/
@@ -66,22 +98,28 @@ li {
     display:flex;
     justify-content: space-between;
     background-color: burlywood;
-    height: 200px;
     align-items: center;
  }
 
  .aboutMeText {
     margin: 70px;
+    width: 300px;
  }
 
  .aboutMeSkills {
-    margin: 300px;
-
+   margin: 70px;
+    display: flex;
+    flex-direction: column;
  }
+.skillsTitle {
+   display: flex;
+   justify-content: center;
+}
+ 
 
  .aboutMeSkills ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
  }
 
  /* --------------------Projects Styling------------- */
@@ -89,7 +127,6 @@ li {
  .Projects {
     display: flex;
     justify-content: center;
-    
  }
 
  .projectBoxes {
@@ -102,7 +139,7 @@ li {
  }
  
  .box1 {
-    height: 100px;
+    height: 350px;
     width: 90%;
     background-color: darkgray;
     margin: 30px;
@@ -110,6 +147,21 @@ li {
     border-style: dashed;
     height: 300px;
     justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+.box2 img,
+.box3 img,
+.box4 img{
+   height: 270px;
+   width: 270px;
+   margin-left: 200px;
+}
+ .box1 img {
+   height: 270px;
+   width: 270px;
+   
  }
 
  .box2 {
@@ -164,9 +216,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-
+    margin-right: 70px;
  }
 
-    
+ .contactPlate {
+   display: flex;
+   height: 30px;
+   align-items: center;
+ }
