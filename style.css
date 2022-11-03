@@ -15,6 +15,7 @@ body {
     margin-top: 20px;
     background-color: rgb(184, 175, 151);
     box-shadow: 20px;
+    font-family: 'Epilogue', sans-serif;
 }
 
 
@@ -100,6 +101,7 @@ li {
     justify-content: space-between;
     background-color: burlywood;
     align-items: center;
+    flex-wrap: wrap;
  }
 
  .aboutMeText {
@@ -150,6 +152,7 @@ li {
     justify-content: center;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
  }
 
 .box2 img,
@@ -226,46 +229,24 @@ li {
    align-items: center;
  }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    background-color: aqua;
-    align-items: center;
-    align-content: space-between;
-    width: 100%;
+ /* ---------------------------Media Queries----------------- */
+
+ html {
+	scroll-behavior: smooth;
 }
 
-.navbarlinks {
-display: flex;
-}
-.nameplate {
-    margin: 10px;
-}
-
-
-.navbarlinks li {
-    margin-left: 20px;
-    list-style: none;
-    justify-content: flex-end;
-    display: flex;
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
-.navbar {
-    width: 100%;
-    display: flex;
+img:hover {
+   opacity: 0.5;
 }
 
-.container ul {
-    justify-content: flex-end;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    height: 100%;
-    flex-wrap: wrap;
+img {
+   opacity: 1.0;
 }
 
 
