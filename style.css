@@ -101,6 +101,7 @@ li {
     justify-content: space-between;
     background-color: burlywood;
     align-items: center;
+    flex-wrap: wrap;
  }
 
  .aboutMeText {
@@ -151,6 +152,7 @@ li {
     justify-content: center;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
  }
 
 .box2 img,
@@ -238,3 +240,13 @@ li {
 		scroll-behavior: auto;
 	}
 }
+
+img:hover {
+   opacity: 0.5;
+}
+
+img {
+   opacity: 1.0;
+}
+
+
